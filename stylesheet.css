@@ -1,0 +1,137 @@
+
+p{
+	font-size: 30px;
+}
+
+.button1{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: cyan;
+  border: none;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button1:hover span {
+  padding-right: 25px;
+}
+
+.button1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+	
+h1 {
+	background-color:blue;
+	text-align:center;
+}
+
+.sportsbackground {
+	background-image: url("images/sports.jpg");
+	background-size: cover;
+}
+
+.skiingbackground {
+	background-image: url("images/skihill.jpg");
+	background-size: 1920px 1000px;
+}
+.citybackground {
+	background-image: url("images/city.jpg");
+	background-size: cover;
+}
+
+.gamingbackground {
+	background-image: url("images/gaming.jpg");
+	background-size: cover;
+}
+
+.schoolbackground {
+	background-image: url("images/school.jpg");
+	background-size: cover;
+}
+
+.futurebackground {
+	background-image: url("images/future.jpg");
+	background-size: cover;
+}
+
+.factsbackground {
+	background-image: url("images/facts.jpg");
+	background-size: cover;
+}
+
+.float-img {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	padding: 2px;
+}
+#cf {
+	position:relative;
+	height:281px;
+	width:450px;
+	margin:0 auto;
+}
+
+#cf img {
+	position:absolute;
+	left:0;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+	opacity:0;
+}
+
